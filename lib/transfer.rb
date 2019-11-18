@@ -6,8 +6,8 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @amount = amt
-    sender.valid?
-    receiver.valid?
+    # sender.valid?
+    # receiver.valid?
   end
 
   def valid?
