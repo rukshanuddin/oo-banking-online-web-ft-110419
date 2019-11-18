@@ -8,4 +8,8 @@ class Transfer
     @amount = amt
   end
 
+  def valid?(person)
+    person.status == 'open'
+  end
+
 end
