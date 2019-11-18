@@ -11,8 +11,8 @@ class Transfer
   end
 
   def valid?
-    @sender.status == 'open'
-    @receiver.status == 'open'
+    @status == 'open'
+    
   end
 
 end
