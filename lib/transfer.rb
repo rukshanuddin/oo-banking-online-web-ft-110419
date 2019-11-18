@@ -7,7 +7,7 @@ class Transfer
     @receiver = receiver
     @amount = amt
     sender.valid?
-    self.valid?
+    receiver.valid?
   end
 
   def valid?
