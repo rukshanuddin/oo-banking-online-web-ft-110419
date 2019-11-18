@@ -11,12 +11,7 @@ class Transfer
   end
 
   def valid?
-    if self.kind_of? Transfer
-      self.status == 'pending'
-    else
-      self.status == 'open'
-    end
-
+    sender.valid? && receiver.valid?
   end
 
   def execute_transaction
