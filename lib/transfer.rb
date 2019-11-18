@@ -22,7 +22,7 @@ class Transfer
   def execute_transaction
     @sender.balance -= @amount
     @receiver.balance += @amount
-    self.status = 'comlpete'
+    self.status = 'complete'
   end
 
   def reverse_transfer
