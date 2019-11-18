@@ -28,6 +28,7 @@ class Transfer
         @sender.balance -= @amount
         @receiver.balance += @amount
         self.status = 'complete'
+      end
     elsif self.status == 'complete'
 
     elsif sender.balance < @amount
