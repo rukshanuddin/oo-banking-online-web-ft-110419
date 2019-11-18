@@ -11,8 +11,7 @@ class Transfer
   end
 
   def valid?
-    self.sender.status == 'open'
-
+    self.status == 'open'
   end
 
 end
