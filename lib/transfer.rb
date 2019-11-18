@@ -11,8 +11,8 @@ class Transfer
   end
 
   def valid?
-    @status == 'open'
-    
+    self.status == 'open'
+
   end
 
 end
