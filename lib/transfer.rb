@@ -10,6 +10,7 @@ class Transfer
 
   def valid?
     self.sender.status == 'open'
+    self.receiver.status == 'open'
   end
 
 end
