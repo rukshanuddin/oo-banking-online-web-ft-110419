@@ -6,12 +6,16 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @amount = amt
-    sender.valid?
-    receiver.valid?
+    if sender.valid? && receiver.valid?
+      
   end
 
   def valid?
-    self.status == 'open'
+    if self.kind_of? Transfer
+      self.status == 'pending'
+    else
+      self.status == 'open'
+    end
 
   end
 
